@@ -1,0 +1,142 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+/* *,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;} */
+
+
+/* Мои стили */
+
+/* html,body{
+    width: 100%;
+    height: 100%;
+} */
+
+form{
+    padding: 5px;
+}
+
+input{
+    width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+hr{
+    border: 1px solid rgba(40, 64, 159, 0.5);
+    margin: 7px 0;
+}
+
+.calc__subtitle{
+    margin-top: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    flex: 1 1 30%;
+    padding: 2px;
+    /* border: 1px solid red; */
+}
+
+.col-icon{
+    flex: 1 1 5%;
+    /* border: 1px solid black; */
+    vertical-align: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.input-elem{
+    display: flex;
+    justify-content: space-between;
+    /* height: 30px; */
+    border: 1px solid black;
+    border-radius: 6px;
+    /* margin: 2px; */
+}
+
+.ed{
+    padding: 10px 5px;
+}
+
+.x{
+    padding: 12px 5px;
+}
+
+.add{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.add__param{
+    width: 30px;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.plus{
+    font-size: 25px;
+}
+
+.btn{
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 6px;
+    padding: 10px 5px;
+    margin: 3px;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    /* visibility: visible; */
+    /* opacity: 1; */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-body{
+    box-sizing: border-box;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.open{
+    visibility: visible;
+    opacity: 1;  
+}
+
+.close{
+    cursor: pointer;
+}

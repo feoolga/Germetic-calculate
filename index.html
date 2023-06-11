@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Germetic</title>
+</head>
+<body>
+    <div class="calc">
+        <div class="calc__title">Калькулятор расхода герметика</div>
+        <form action="#" id="form_calc_wood">
+
+            <div id="diameter_log">
+                <div class="calc__subtitle" style="text-align: center;">Высота бревна | бруса</div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <label for="diameter"></label>
+                        <div class="input-elem">
+                            <input type="text" id="diameter">
+                            <div class="ed">см</div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+
+            <div id="levels">
+                <div class="calc__subtitle">Этажи</div>
+                <div class="row">
+                    <div class="col">
+                        <label for="level-h">высота</label>
+                        <div class="input-elem">
+                            <input type="text" id="level-h">
+                            <div class="ed">м</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="level-p">периметр</label>
+                        <div class="input-elem">
+                            <input type="text" id="level-p">
+                            <div class="ed">м</div>
+                        </div>
+                    </div>
+                    <div class="col-icon">
+                        <div class="x">х</div>
+                    </div>
+                    <div class="col">
+                        <label for="level-num">количество</label>
+                        <div class="input-elem">
+                            <input type="text" id="level-num" value="1">
+                            <div class="ed">шт</div>
+                        </div>
+                    </div>
+                    <div class="col-icon">
+                        <div class="x">del</div>
+                    </div>
+                </div>
+
+                <div class="add">
+                    <div class="add__param">
+                        <span class="plus">+</span>
+                    </div>
+                    <div>Добавить еще этаж(и)</div>
+                </div>
+            </div>
+
+            <div id="frontons">
+                <div class="calc__subtitle">Фронтоны</div>
+                <div class="row">
+                    <div class="col">
+                        <label for="fronton-h">высота</label>
+                        <div class="input-elem">
+                            <input type="text" id="fronton-h">
+                            <div class="ed">м</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="fronton-w">ширина</label>
+                        <div class="input-elem">
+                            <input type="text" id="fronton-w">
+                            <div class="ed">м</div>
+                        </div>
+                    </div>
+                    <div class="col-icon">
+                        <div class="x">х</div>
+                    </div>
+                    <div class="col">
+                        <label for="fronton-num">количество</label>
+                        <div class="input-elem">
+                            <input type="text" id="fronton-num">
+                            <div class="ed">шт</div>
+                        </div>
+                    </div>
+                    <div class="col-icon">
+                        <div class="x">del</div>
+                    </div>
+                </div>
+                <div class="add">
+                    <div class="add__param">
+                        <span class="plus">+</span>
+                    </div>
+                    <div>Добавить еще фронтон(ы)</div>
+                </div>
+            </div>
+
+            <div id="windows">
+                <div class="calc__subtitle">Окна</div>
+                <div class="row">
+                    <div class="col">
+                        <label for="window-h">высота</label>
+                        <div class="input-elem">
+                            <input type="text" id="window-h">
+                            <div class="ed">см</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="window-w">ширина</label>
+                        <div class="input-elem">
+                            <input type="text" id="window-w">
+                            <div class="ed">см</div>
+                        </div>
+                    </div>
+                    <div class="col-icon">
+                        <div class="x">х</div>
+                    </div>
+                    <div class="col">
+                        <label for="window-num">количество</label>
+                        <div class="input-elem">
+                            <input type="text" id="window-num">
+                            <div class="ed">шт</div>
+                        </div>
+                    </div>
+                    <div class="col-icon">
+                        <div class="x">del</div>
+                    </div>
+                </div>
+                <div class="add">
+                    <div class="add__param">
+                        <span class="plus">+</span>
+                    </div>
+                    <div>Добавить еще окно(а)</div>
+                </div>
+            </div>
+
+            <div id="doors">
+                <div class="calc__subtitle">Двери</div>
+                <div class="row">
+                    <div class="col">
+                        <label for="door-h">высота</label>
+                        <div class="input-elem">
+                            <input type="text" id="door-h">
+                            <div class="ed">см</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="door-w">ширина</label>
+                        <div class="input-elem">
+                            <input type="text" id="door-w">
+                            <div class="ed">см</div>
+                        </div>
+                    </div>
+                    <div class="col-icon">
+                        <div class="x">х</div>
+                    </div>
+                    <div class="col">
+                        <label for="door-num">количество</label>
+                        <div class="input-elem">
+                            <input type="text" id="door-num">
+                            <div class="ed">шт</div>
+                        </div>
+                    </div>
+                    <div class="col-icon">
+                        <div class="x">del</div>
+                    </div>
+                </div>
+
+                <div class="add">
+                    <div class="add__param">
+                        <span class="plus">+</span>
+                    </div>
+                    <div>Добавить еще дверь(и)</div>
+                </div>
+            </div>
+
+            <button id="btn-calc" class="btn" onclick="calc();">Рассчитать</button>
+            <button id="btn-calc-simple" class="btn">Простой рассчет</button>
+            <button id="btn-calc-hard" class="btn">Сложный рассчет</button>
+
+        </form>
+    </div>
+    <div class="modal">
+        <div class="modal-body">
+            <div class="row modal__title">
+               <div>Рассчет</div>
+               <div class="close">X</div>
+            </div>
+            <hr>
+            <div class="modal__content">
+                <div id="rez-meters"><span>Длина:</span></div>
+                <div id="rez-liters">Расход герметика:</div>
+            </div>
+            <hr>
+            <button id="btn-calc-change" class="btn">Изменить рассчет</button>
+            <button id="btn-calc-new" class="btn">Новый рассчет</button>
+            <button id="btn-calc-ring" class="btn">Заказать звонок</button>
+        </div>
+    </div>
+
+</body>
+    
+<script src="script.js"></script>
+
+</html>
