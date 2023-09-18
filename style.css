@@ -1,27 +1,8 @@
-/*Обнуление*/
 *{
 	padding: 0;
 	margin: 0;
 	border: 0;
 }
-/* *,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-
-input,button,textarea{font-family:inherit;}
-
-input::-ms-clear{display: none;} */
-
-
-/* Мои стили */
-
-/* html,body{
-    width: 100%;
-    height: 100%;
-} */
 
 form{
     padding: 5px;
@@ -50,12 +31,10 @@ hr{
 .col{
     flex: 1 1 30%;
     padding: 2px;
-    /* border: 1px solid red; */
 }
 
 .col-icon{
     flex: 1 1 5%;
-    /* border: 1px solid black; */
     vertical-align: bottom;
     display: flex;
     flex-direction: column;
@@ -66,10 +45,8 @@ hr{
 .input-elem{
     display: flex;
     justify-content: space-between;
-    /* height: 30px; */
     border: 1px solid black;
     border-radius: 6px;
-    /* margin: 2px; */
 }
 
 .ed{
@@ -116,8 +93,6 @@ hr{
     background-color: rgba(0, 0, 0, 0.6);
     visibility: hidden;
     opacity: 0;
-    /* visibility: visible; */
-    /* opacity: 1; */
     position: fixed;
     top: 0;
     left: 0;
@@ -139,4 +114,14 @@ hr{
 
 .close{
     cursor: pointer;
+}
+
+@media (max-width: 425px){
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .col{
+        flex: 1 1 100%;
+    }
 }
